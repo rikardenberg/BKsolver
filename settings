@@ -1,0 +1,54 @@
+# Basename for output file(s) [".dat" will be added in the simplest case] 
+OUTPUT_FILE = "test"
+
+# Number of u-intervals. MUST be a power of 2 !  
+KMAX = 256  
+
+# Max and min of log(k^2) 
+LN_K_MAX = 138.0
+LN_K_MIN = 20.0
+
+# Number of Y-intervals 
+Y_GRID_MAX = 10
+
+# Length of each Y-interval (note that this is not the ODE step size!) 
+DELTA_Y = 5.0
+
+# Accuracy and initial step-size in ODE solver 
+ODE_ACCURACY = 1e-3
+ODE_STEPSIZE = 1e-3
+
+# Alpha-bar value of fixed coupling 
+ALPHA_BAR = 0.2
+
+# Alpha-bar running (yes/true/y/t/1) or fixed (no/false/n/f/0) ? 
+ALPHA_RUNNING = no
+
+# Running coupling-related 
+#N_FLAVOUR = 3
+#LAMBDA_QCD = 0.2
+#ALPHA_FREEZE = 0.5
+
+# Choice of integral kernel  
+#   BFKL:               0
+#   Two-pole model:     1   
+#   BFKL w/ approx. CC  2
+BK_KERNEL = 0
+
+# Print data to single file (no) or multiple files (yes)
+PRINT_SPLIT = no
+
+# Choice of initial condition
+#   Read from file:   0
+#   Step function:    1
+#   Smooth step:      2
+#   Gaussian:         3 
+#   1/sqrt(k):        4
+IC_CHOICE = 0
+
+# File containing table of initial condition if IC_CHOICE = 0
+IC_FILE = "mv-k.front.dat"
+
+# Position of initial condition if IC_CHOICE > 0
+IC_POSITION = 1.0
+

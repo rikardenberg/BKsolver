@@ -1,0 +1,40 @@
+Readme of BKsolver 
+Copyright (C) 2004-2005 by Rikard Enberg <REnberg@lbl.gov>
+
+To run the program, do the following:
+
+1) cd bin
+2) Edit Makefile to insert correct path to GSL and correct
+   flags for your compiler etc.
+3) make
+4) cd ..
+5) Edit the file `settings' to suit your needs.
+6) ./bin/bk settings &
+
+
+Files in this distribution:
+---------------------------
+README            This file 
+COPYING           The GNU General Public License version 2
+manual.ps         The manual
+
+settings          Example configuration file 
+mv-k.front.dat    Tabulated MV initial condition
+default.dat       Output produced using default values for all parameters
+
+bin/Makefile      Makefile. Insert correct path to GSL before typing make. 
+
+                  
+Source files:
+-------------
+src/bkeqn.c       Main program
+src/bksetup.c
+src/bksolve.c
+src/bk.h
+src/fft4g.c       FFT package by Ooura
+src/parsecfg.c    parsecfg by Ninomiya
+src/parsecfg.h      -"-
+src/intl.h          -"-
+src/qs.c          Separate program to extract saturation scale etc 
+                  from the results of BKsolver. Not documented but 
+                  should explain itself (?)
