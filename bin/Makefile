@@ -1,6 +1,6 @@
 # Position of sources and libraries
 VPATH= ../src 
-GSL_HOME = /usr
+GSL_HOME = /usr/local
 GSLLIB   = -L$(GSL_HOME)/lib -lgsl -lgslcblas -lm
 GSLINC   = -I$(GSL_HOME)/include
 

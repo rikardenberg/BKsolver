@@ -44,7 +44,7 @@ PRINT_SPLIT = no
 #   Smooth step:      2
 #   Gaussian:         3 
 #   1/sqrt(k):        4
-IC_CHOICE = 0
+IC_CHOICE = 3
 
 # File containing table of initial condition if IC_CHOICE = 0
 IC_FILE = "mv-k.front.dat"

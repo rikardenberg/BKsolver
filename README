@@ -11,12 +11,18 @@ To run the program, do the following:
 5) Edit the file `settings' to suit your needs.
 6) ./bin/bk settings &
 
+NOTE! (July 2018)
+-----------------
+There has been a change in the GSL interpolation routines since BKsolver 
+was written 13 years ago, so at the moment the option for reading an 
+initial condition from a file does not work. The settings file has been 
+changed to option 3. I will try to sort this out at some point.
 
 Files in this distribution:
 ---------------------------
 README            This file 
 COPYING           The GNU General Public License version 2
-manual.ps         The manual
+manual.pdf        The manual
 
 settings          Example configuration file 
 mv-k.front.dat    Tabulated MV initial condition
